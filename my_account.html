@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnpKick® Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/fonts/icon/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="icon" href="https://www.anpkick.co/image/catalog/anpkick-icon-407x407.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/fonts/icon/themify-icons/themify-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div id="preloaderr" style="background:url(./assets/img/loader/3.gif) no-repeat center center;"></div>
+
+    <div class="main">
+<!-- ============ start Header ============= -->
+        <header class="header">
+
+                <!-- phần Navbar -->
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--strong" >
+                            
+                            <a href="./index_login.html" class="header__navbar-icon--link header__navbar-item--separate">
+                                <i class="header__navbar-icon ti-home"></i> Home
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--QR header__navbar-item--separate">
+                            <a href="#" class="header__navbar-icon--link ">
+                            <i class="header__navbar-icon ti-download"></i>
+                            </a>
+                            <!-- Header QR code -->
+                            <div class = "header__qr">
+                                <img src="./assets/img/qr_down.png" alt="QR code" class="header__qr-img">
+                                <div class="header__qr-apps">
+                                    <a href="" class="header__qr-link"><img class="header__qr-download-img" src="./assets/img/chplay.png" alt="app chplay"></a>
+                                    <a href="" class="header__qr-link"><img class="header__qr-download-img" src="./assets/img/app_store.png" alt="app store"></a>
+                                    <a href="" class="header__qr-link"><img class="header__qr-download-img" src="./assets/img/Galery.png" alt="app store"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--separate">
+                            <a href="#" class="header__navbar-icon--link">
+                                <i class="header__navbar-icon ti-user"> </i> Account
+                            </a>
+                            <li class="header__navbar-item ">
+                                <a href="#" class="header__navbar-icon--link">
+                                    <i class="header__navbar-icon ti-instagram">  </i> Ins-DM
+                                    <i class="header__navbar-icon ti-angle-double-down"></i>
+                                </a>
+                                <ul class="navbar__ins-item">
+                                    <li><a href="">anpkick.shopping</a></li>
+                                    <li><a href="">anpkick.co</a></li>
+                                    <li><a href="">anpkick.vip</a></li>
+                                </ul>
+                            </li>
+
+                        </li>
+                    </ul>
+                    <ul class="header__navbar-list">
+                        <!-- đã login -->
+                        <div class="active-login">
+                            <li class="header__navbar-item header__navbar-user">
+                                <img src="./assets/img/github.svg" alt="" class="header__navbar-user-avt">
+                                <span id="Email_user" class="header__navbar-user-name"><script>document.write(sessionStorage.email_user); sessionStorage.removeItem('email_user')</script></span>
+    
+                                <ul class="header__navbar-user-menu">
+                                    <li class="header__navbar-user-item">
+                                        <a href="">My account</a>
+                                    </li>
+                                    <li class="header__navbar-user-item">
+                                        <a href="">Purchase order</a>
+                                    </li>
+                                    <li class="header__navbar-user-item header__navbar-user-item--separate">
+                                        <a href="./index.html">Log out</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </div>
+
+                        <!-- history khi login -->
+                        <li class="header__navbar-item header__navbar-item--thongbao active">
+                            <a href="" class="header__navbar-item--link ">
+                                Order history
+                                <i class="header__navbar-icon fas fa-bell header__nav-notice"></i>
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>History</h3>
+                                </header>
+                                <ul class="header__notify-list header__notify-item--viewed">
+                                    <li class="header__notify-item">
+                                        <a class = "header__notify-link "href="">                                          
+                                            <img src="./assets/img/giay.png" alt="" class="header__notify-img">
+                                            </span>
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Harness the cloud</span>
+                                                <span class="header__notify-decriotion">Get a $200 credit to explore Azure for 30 days, with access to more than 25 free services when you sign up for a 12-month </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <ul class="header__notify-list header__notify-item--viewed">
+                                    <li class="header__notify-item">
+                                        <a class = "header__notify-link "href="">                                          
+                                            <img src="./assets/img/giay.png
+                                            " alt="" class="header__notify-img">
+                                            </span>
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Boost your knowledge</span>
+                                                <span class="header__notify-decriotion">Expand your current skills with access to the latest training platforms and the support of the Microsoft Azure and Developer communities.</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item">
+                                        <a class = "header__notify-link "href="">                                          
+                                            <img src="./assets/img/giay.png
+                                            " alt="" class="header__notify-img">
+                                            </span>
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Mỹ phẩm Ohui chính hãng</span>
+                                                <span class="header__notify-decriotion">Mô tả mỹ phẩm</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item">
+                                        <a class = "header__notify-link "href="">                                          
+                                            <img src="./assets/img/giay.png
+                                            " alt="" class="header__notify-img">
+                                            </span>
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Develop for any platform</span>
+                                                <span class="header__notify-decriotion">Build and deploy your next app on any platform with free access to editors, designers and debuggers.</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="" class="header__notify-footer-btn">View all</a>
+                                </footer>
+                            </div>
+                        </li>
+
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item--link">Help
+                                <i class="header__navbar-icon far fa-question-circle"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Dựng Logo, khung tìm kiếm -->
+                <div class="header-with-search">
+                    <div class="header__logo">
+                        <a class="header__logo-link" href="./index_login.html">
+                            <img class="header__logo-img" src="./assets/img/LOGO.png" height="100" alt="AnpKick® Store" title="AnpKick® Store" >
+                        </a>
+                    </div>
+
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Search entire store...">
+                            
+                            <!-- tạo bảng lịch sử tìm kiếm -->
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Search history</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="">Item1</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Item2</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Item3</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Item4</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header__search-select">
+                            <span class="header__search-select-label">In the shop</span>
+                            <i class="header__search-select-icon fas fa-sort-down"></i>
+
+                      <!-- tạo bảng option -->
+                            <ul class="header__search-select-option">
+                                <li class="header__search-option-item header__search-option-item--active">
+                                    <span>In the shop</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                                <li class="header__search-option-item">
+                                    <span>Outside the shop</span>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <botton class="header__search-btn">
+                            <i class="header__search-btn-icon fas fa-search"></i>
+                        </botton>
+                    </div>
+                    <!--  giỏ hàng -->
+                    <div class="header__cart">
+                        
+                        <i class="header__cart-icon fas fa-shopping-cart"></i>
+                        <span class="header__cart-notice">19</span>
+
+                        <!-- chưa có sản phẩm áp thêm class = header__cart-list-no-cart -->
+                        <div class="header__cart-list">
+                             <!-- <img class="header__cart-no-cart-img" src="./assets/img/no-cart.png" alt="no cart">  
+                             <p class="header__cart-list-no-cart-msg" >Your shopping cart is empty!  </p>                  -->
+                            <!-- đã có sản phẩm trong giỏ hàng -->
+                            <ul class="header__cart-list-item ">
+                                <li class="header__cart-item">
+                                    <img src="./assets/img/sanpham1.png" alt="sanpham1" class="header__cart-img">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">Lap top</h5>
+                                            <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">9.999.999đ</span>
+                                                <span class="header__cart-item-multipl">x</span>
+                                                <span class="header__cart-item-quantity">1</span>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <span class="header__cart-item-decription">
+                                                Phân loại: Công nghệ
+                                            </span>
+                                            <span class="header__cart-item-remove">Xóa</span>                                            
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header__cart-item">
+                                    <img src="./assets/img/sanpham1.png" alt="sanpham1" class="header__cart-img">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">Lap top</h5>
+                                            <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">9.999.999đ</span>
+                                                <span class="header__cart-item-multipl">x</span>
+                                                <span class="header__cart-item-quantity">1</span>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <span class="header__cart-item-decription">
+                                                Phân loại: Công nghệ
+                                            </span>
+                                            <span class="header__cart-item-remove">Xóa</span>                                            
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header__cart-item">
+                                    <img src="./assets/img/sanpham1.png" alt="sanpham1" class="header__cart-img">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">Lap top</h5>
+                                            <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">9.999.999đ</span>
+                                                <span class="header__cart-item-multipl">x</span>
+                                                <span class="header__cart-item-quantity">1</span>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <span class="header__cart-item-decription">
+                                                Phân loại: Công nghệ
+                                            </span>
+                                            <span class="header__cart-item-remove">Xóa</span>                                            
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header__cart-item">
+                                    <img src="./assets/img/sanpham1.png" alt="sanpham1" class="header__cart-img">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">Lap top</h5>
+                                            <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">9.999.999đ</span>
+                                                <span class="header__cart-item-multipl">x</span>
+                                                <span class="header__cart-item-quantity">1</span>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <span class="header__cart-item-decription">
+                                                Phân loại: Công nghệ
+                                            </span>
+                                            <span class="header__cart-item-remove">Xóa</span>                                            
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header__cart-item">
+                                    <img src="./assets/img/sanpham1.png" alt="sanpham1" class="header__cart-img">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">Lap top</h5>
+                                            <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">9.999.999đ</span>
+                                                <span class="header__cart-item-multipl">x</span>
+                                                <span class="header__cart-item-quantity">1</span>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <span class="header__cart-item-decription">
+                                                Phân loại: Công nghệ
+                                            </span>
+                                            <span class="header__cart-item-remove">Xóa</span>                                            
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="footer__cart">
+                                <button class="footer__cart-see">19 Thêm Hàng Vào Giỏ</button>
+                                <button class="seecart">Xem giỏ hàng</button>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <!-- start nav -->
+                <div class="nav nav-fixed">
+                    <ul class="nav-list">
+                        <li class="menu-lv1 test-menu"><a href="./index_login.html">HOME</a></li>
+                        <li class="menu-lv1 test-menu"><a href="./nav_item.html">YEEZY</a></li>
+                        <li class="menu-lv1 test-menu"><a href="#">OFF-WHITE</a></li>
+                        <li class="menu-lv1 test-menu"><a href="#">AIR JORDAN</a>
+                            <ul class="container-menu-lv2">
+                                <li class="container-menu-lv3"><a href="">Air jordan 1</a></li>
+                                <li class="container-menu-lv3"><a href="">Air jordan 2</a></li>
+                                <li class="container-menu-lv3"><a href="">Air jordan 3</a></li>
+                                <li class="container-menu-lv3"><a href="">Air jordan 4</a></li>
+                                <li class="container-menu-lv3"><a href="">Air jordan 5</a></li>
+                                <li class="container-menu-lv3"><a href="">Air jordan 6</a></li>
+                                <li class="container-menu-lv3"><a href="">Air jordan 7</a></li>
+                                <li class="container-menu-lv3"><a href="">Air jordan 8</a></li>
+                                <li class="container-menu-lv3"><a href="">Air jordan 9</a></li>
+                                <li class="container-menu-lv3"><a href="">Air jordan 10</a></li>
+                                <li class="container-menu-lv3"><a href="">Air jordan 11</a></li>
+                                <li class="container-menu-lv3"><a href="">Air jordan 12</a></li>
+                                <li class="container-menu-lv3"><a href="">Air jordan 13</a></li>
+                                <li class="container-menu-lv3"><a href="">Air jordan 14</a></li>
+                                <li class="container-menu-lv3"><a href="">Air jordan 15</a></li>
+                                <li class="container-menu-lv3"><a href="">Air jordan 16</a></li>
+                                <li class="container-menu-lv3"><a href="">Air jordan 18</a></li>
+                                <li class="container-menu-lv3"><a href="">Air jordan 19</a></li>
+                                <li class="container-menu-lv3"><a href="">Air jordan 20</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-lv1 test-menu"><a href="">TRAVIS SCOTT</a></li>
+                        <li class="menu-lv1 test-menu"><a href="">OTHER BRANDS</a>
+                            <ul class="container-menu-lv2">
+                                <li class="container-menu-lv3"><a href="">Supermy</a></li>
+                                <li class="container-menu-lv3"><a href="">Converse</a></li>
+                                <li class="container-menu-lv3"><a href="">Foamposite</a></li>
+                                <li class="container-menu-lv3"><a href="">Balenciaga</a></li>
+                                <li class="container-menu-lv3"><a href="">MCQ</a></li>
+                                <li class="container-menu-lv3"><a href="">GG</a></li>
+                                <li class="container-menu-lv3"><a href="">New Balance</a></li>
+                                <li class="container-menu-lv3"><a href="">a.m.i.r.i</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-lv1 test-menu"><a href="">NIKE</a>
+                            <ul class="container-menu-lv2">
+                                <li class="container-menu-lv3"><a href="">Dunk SB</a></li>
+                                <li class="container-menu-lv3"><a href="">ZOOM</a></li>
+                                <li class="container-menu-lv3"><a href="">Air Fog1</a></li>
+                                <li class="container-menu-lv3"><a href="">Air Vapormax</a></li>
+                                <li class="container-menu-lv3"><a href="">Air Max 270</a></li>
+                                <li class="container-menu-lv3"><a href="">Air Max 95</a></li>
+                                <li class="container-menu-lv3"><a href="">Nike Epic React Flyknit</a></li>
+                                <li class="container-menu-lv3"><a href="">Air Max 97</a></li>
+                                <li class="container-menu-lv3"><a href="">Air Max 98</a></li>
+                                <li class="container-menu-lv3"><a href="">Air Max TN</a></li>
+                                <li class="container-menu-lv3"><a href="">Air Max 1</a></li>
+                                <li class="container-menu-lv3"><a href="">Air Force 1</a></li>
+                                <li class="container-menu-lv3"><a href="">Air More Uptempo</a></li>
+                                <li class="container-menu-lv3"><a href="">Air Max Fury</a></li>
+                                <li class="container-menu-lv3"><a href="">Nike Blazer</a></li>
+                                <li class="container-menu-lv3"><a href="">Others</a></li>
+                               
+                            </ul>
+                        </li>
+                        <li class="menu-lv1 test-menu"><a href="">ADIDAS</a>
+                            <ul class="container-menu-lv2">
+                                <li class="container-menu-lv3"><a href="">Alphabounce</a></li>
+                                <li class="container-menu-lv3"><a href="">Parrell Williams</a></li>
+                                <li class="container-menu-lv3"><a href="">NMD</a></li>
+                                <li class="container-menu-lv3"><a href="">Ultra Boost</a></li>
+                                <li class="container-menu-lv3"><a href="">Tubular Doom Primeknit</a></li>
+                                <li class="container-menu-lv3"><a href="">EQT</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li class="menu-lv1 test-menu"><a href="">WOMEN'S SHOES</a></li>
+                        <li class="menu-lv1 test-menu"><a href="">YOUTH/GS SHOES</a></li>
+                        <li class="menu-lv1 test-menu"><a href="">ACCESSORY</a>
+                            <ul class="container-menu-lv22 menu_accessory">
+                                <li class="container-menu-lv33"><a href="">Socks</a></li>
+                                <li class="container-menu-lv33"><a href="">Rugs / Carpet</a></li>
+                                <li class="container-menu-lv33"><a href="">Sandals Slippers</a></li>
+                                <li class="container-menu-lv33"><a href="">Bags</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-lv1 test-menu"><a href="">KID'S SHOES</a></li>
+                        <li class="menu-lv1 test-menu"><a href="">CLOTHES</a>
+                            <ul class="container-menu-lv22">
+                                <li class="container-menu-lv33"><a href="">Canada Goose</a></li>
+                                <li class="container-menu-lv33"><a href="">Other Clothes Hoodies</a></li>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- end nav -->
+        </header>
+        
+<!-- ============ end Header ============= -->
+
+<!-- ============== START CONTENT =============== -->
+<div class="app__container">
+    <div class="grid">
+        <div class="grid__row" style="display:flex;">
+
+            <div class="grid__column-2" style="padding-top: 10px;">
+                <nav class="hotproduct">
+                    <ul class="hotproduct-list">
+                        <li class="hotproduct-item" style="cursor: pointer;">
+                            <a href="#" class="hotproduct-item__link">
+                                <img src="./assets/img/github.svg" width="50px" alt="anh1" style="margin-top: 5px; border: 3px solid #e03e2a; border-radius: 100%;">
+                            </a>
+                            <a href="">
+                                <h1 class="hotproduct-item-name"><script>document.write(sessionStorage.email_user); sessionStorage.removeItem('email_user')</script></h1>
+                                <h3 class="hotproduct-price"><i class="ti-pencil" style="margin-right:3px ;"></i>
+                                    Edit profile</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="user-inf">
+                    <ul class="user-inf-list">
+                        <li class="user-item">
+                            <div class="" style="display: flex; justify-items: center; margin-top: 10px; margin-left: 10%;font-size: 1.6rem; font-weight: 500;">
+                                <i class="ti-id-badge" style="margin-top: 4px; margin-right: 10px; color: rgb(51, 0, 255);"></i>
+                                <p style="color: black;">My account</p>
+                            </div>
+                        </li>
+                        <li class="user-item">
+                            <ul class="menu-user1" >
+                                <li class="menu-user2 active">User Profile</li>
+                                <li class="menu-user2">Bank</li>
+                                <li class="menu-user2">Address</li>
+                                <li class="menu-user2">Change Password</li>
+                            </ul>
+                        </li>
+                        <li class="user-item">
+                            <div class="user1" style="display: flex; justify-items: center; margin-top: 10px; margin-left: 10%;font-size: 1.6rem; font-weight: 500;">
+                                <i class="ti-calendar" style="margin-top: 4px; margin-right: 10px; color: rgb(0, 115, 255);"></i>
+                                <p style="color: black;">Purchase form</p>
+                            </div>
+                        </li>
+                        
+
+                        <li class="user-item">
+                            <div class="" style="display: flex; justify-items: center; margin-top: 10px; margin-left: 10%;font-size: 1.6rem; font-weight: 500;">
+                                <i class="ti-bell" style="margin-top: 4px; margin-right: 10px; color: rgb(255, 0, 51);"></i>
+                                <p style="color: black;">Notify</p>
+                            </div>
+                        </li>
+                        <li class="user-item">
+                            <div class="" style="display: flex; justify-items: center; margin-top: 10px; margin-left: 10%;font-size: 1.6rem; font-weight: 500;">
+                                <i class="ti-folder" style="margin-top: 4px; margin-right: 10px; color: rgb(255, 179, 0);"></i>
+                                <p style="color: black;">Voucher store</p>
+                            </div>
+                        </li>
+                        <li class="user-item">
+                            <div class="" style="display: flex; justify-items: center; margin-top: 10px; margin-left: 10%;font-size: 1.6rem; font-weight: 500;">
+                                <i class="ti-gift" style="margin-top: 4px; margin-right: 10px; color: rgb(234, 255, 0);"></i>
+                                <p style="color: black;">Gift shop</p>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="grid__column-10">
+
+                    <!-- phần sản phẩm -->
+                    <div class="home-product_inf">
+                        <div class="grid__row">
+                            <div style="padding: 5px; margin-left: 5px; margin-right: 5px; margin-top: 10px; width: 100%; background-color: #fff; border-bottom: solid 1px rgb(245, 245, 245);" >
+                                <h3 style="margin-left: 2%; margin-bottom: 10px; margin-top: 10px;">My profile</h3>
+                                <p style="margin-left: 2%; font-size: 1.4rem;">Manage profile information for account security</p>
+                            </div>
+                            <div style="padding-left: 5px; padding-right: 5px;  width: 100%; display: flex;">
+                                <!-- product item -->
+                                <div href="#" class="left" style="width:70%; background-color: #fff;">
+                                   <table style="height: 400px; margin: 0 auto;font-size: 2rem; margin-left: 20%; margin-top: 30px;">
+                                        <tr>
+                                            <td style="opacity: 0.8;">User name</td>
+                                            <td><script>document.write(sessionStorage.email_user); sessionStorage.removeItem('email_user')</script></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="opacity: 0.8;">Name</td>
+                                            <td class="input-name"><input type="text" name="" id="" style="height: 40px; width: 300px;"></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="opacity: 0.8;">Email</td>
+                                            <td>***@gmail.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="opacity: 0.8;">Sex</td>
+                                            <td><input type="radio" name="sex" id="nam" value="Nam">Male
+                                                <input type="radio" name="sex" id="nu" value="nữ">Female
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="opacity: 0.8; padding-right: 30px;">Date of birth</td>
+                                            <td><input type="date" name="ngaysinh" /></td>
+                                        </tr>
+                                        <tr style="margin-top: 10px;">
+                                            <td></td>
+                                            <td><input class="save" type="button" value="Save" style="color: #fff; font-weight: 500; outline: none; background-color: rgb(233, 121, 0); border: none; padding: 10px 15px; border-radius: 3px;"></td>
+                                        </tr>
+                                   </table>
+                                </div>
+                                <div class="right" style="border-left: solid 1px rgb(245, 245, 245); width: 30%; background-color: #fff;">
+                                    <div class="right_list" style="text-align: center;">
+                                        <img src="./assets/img/github.svg" height="150px" alt="" style="margin: 10px; border-radius: 100%; padding-top: 10px;">
+                                        <div><input class="btn-changeimg" type="button" value="Choose photo" style="border: #ccc solid 1px; height: 30px; font-size: 1.3rem; "></div>
+                                        <p style="margin: 10px; font-size: 1.3rem;">Maximum file size 1 MB <br>
+                                            Format: .JPEG, .PNG</p>
+                                    </input>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ============== END CONTENT ================= -->
+
+<!-- =========== START FOOTER ==================== -->
+<footer class="footer">
+    <div class="grid">
+        <div class="grid__row">
+            <div class="grid__column-2-4">
+                <h3 class="footer__heading">ABOUT US</h3>
+                <hr>
+                <ul class="footer-list">
+                    <li class="footer-item">
+                        <h3 style="color: #d5d0d0; font-size: 1.4rem; font-weight: 400;">AnpKick was established in 2012 by Ms.Eva, and Brothers Mr.Ivan & Mr.Jack. AnpKick has made a name for itself as one of the leading retailers of hard to find, rare and exclusive sneakers.</h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="grid__column-2-4">
+                <h3 class="footer__heading">INFORMATION</h3>
+                <hr>
+                <ul class="footer-list">
+                    <li class="footer-item">
+                        <a href="" class="footer-item__link">About Us</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="" class="footer-item__link">Delivery Information</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="" class="footer-item__link">Privacy Policy</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="" class="footer-item__link">Returns Policy</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="" class="footer-item__link">Terms & Conditions</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="" class="footer-item__link">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="grid__column-2-4">
+                <h3 class="footer__heading">PURCHASE SUPPORT</h3> 
+                <hr>
+                <ul class="footer-list">
+                    <li class="footer-item">
+                        <a href="" class="footer-item__link">Contact Us</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="" class="footer-item__link">Order History</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="" class="footer-item__link">Wishlist</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="" class="footer-item__link">Speacials</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="" class="footer-item__link">Brands</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="grid__column-2-4">
+                <h3 class="footer__heading">EXTRAS</h3>
+                <hr>
+                <ul class="footer-list">
+                    <li class="footer-item">
+                        <a href="" class="footer-item__link">
+                           <i class="footer-item__icon ti-facebook"></i>
+                            Facebook
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="" class="footer-item__link">
+                           <i class="footer-item__icon ti-instagram"></i>
+                            Instagram
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="" class="footer-item__link">
+                            <i class="footer-item__icon ti-linkedin"></i>
+                            linkedin
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="grid__column-2-4">
+                <h3 class="footer__heading">GO TO THE APP STORE</h3>
+                <hr>
+                <div class="footer__download">
+                    <img src="./assets/img/qr_down.png" alt="download QR" class="footer__download-qr">
+                    <div class="footer__download-apps">
+                        <a href="" class="footer__download-app-link">
+                            <img src="./assets/img/chplay.png" alt="CH PLAY" class="footer__download-app-img">
+                        </a>
+                        <div class="footer__download-app-link">
+                            <img src="./assets/img/app_store.png" alt="APP STORE" class="footer__download-app-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="bot">
+            <p class="footer__text">Copyright © 2022, AnpKick Store, All Rights Reserved</p>
+            <div class="contact_">
+                <div class="contact">
+                    <div class="facebook" style="--i:4; --j:0"></div>
+                    <div class="facebook" style="--i:3; --j:1"></div>
+                    <div class="facebook" style="--i:2; --j:2"></div>
+                    <div class="facebook" style="--i:1; --j:3"></div>
+                    <div class="facebook" style="--i:0; --j:4"><i class="fab fa-facebook-f"></i></div>
+                </div>
+                <div class="contact">
+                    <div class="twitter" style="--i:4; --j:0"></div>
+                    <div class="twitter" style="--i:3; --j:1"></div>
+                    <div class="twitter" style="--i:2; --j:2"></div>
+                    <div class="twitter" style="--i:1; --j:3"></div>
+                    <div class="twitter" style="--i:0; --j:4"><i class="fab fa-twitter"></i></div>
+                </div>
+                <div class="contact">
+                    <div class="google" style="--i:4; --j:0"></div>
+                    <div class="google" style="--i:3; --j:1"></div>
+                    <div class="google" style="--i:2; --j:2"></div>
+                    <div class="google" style="--i:1; --j:3"></div>
+                    <div class="google" style="--i:0; --j:4"><i class="fab fa-google-plus-g"></i></div>
+                </div>
+                <div class="contact">
+                    <div class="instagram" style="--i:4; --j:0"></div>
+                    <div class="instagram" style="--i:3; --j:1"></div>
+                    <div class="instagram" style="--i:2; --j:2"></div>
+                    <div class="instagram" style="--i:1; --j:3"></div>
+                    <div class="instagram" style="--i:0; --j:4"><i class="fab fa-instagram"></i></div>
+                </div>
+            </div>
+            <div class="bottom_img">
+                <img class="bottom_img-item" src="./assets/img/footer/ax-51x32.png" alt="">
+                <img class="bottom_img-item" src="./assets/img/footer/maestro.png" alt="">
+                <img class="bottom_img-item" src="./assets/img/footer/mc.png" alt="">
+                <img class="bottom_img-item" src="./assets/img/footer/visa.png" alt="">
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- =========== END FOOTER ==================== -->
+    <!-- =================== -->
+    <!-- loading -->
+    <!-- <iframe style="display:none" width="560" height="315" src="https://www.youtube.com/embed/4zogKO1sDBE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+</div>
+<a href="#" class="btn-top btn-outline-warning back-to-top" style="display: inline;"><i class="ti-arrow-up"></i></a>
+</body>
+<script src="./assets/bootstrap/js/bootstrap.js"></script>
+<script src="./assets/main.js"></script>
+<script>
+    var loader = document.getElementById("preloaderr");
+    window.addEventListener("load", function(){
+        loader.style.display = "none";
+    })
+    //==================== active user item=============================
+const menu_user2s = document.querySelectorAll(".menu-user2");
+
+menu_user2s.forEach(function(menu_user2, index){
+    menu_user2.addEventListener("click", function(){
+        document.querySelector(".menu-user2.active").classList.remove("active");
+        this.classList.add("active");
+    })
+})
+</script>
+</html>
